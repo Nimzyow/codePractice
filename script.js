@@ -30,6 +30,18 @@ numberChangeHandler = (num) => {
 }
 console.log(numberChangeHandler(9119));
 */
+
+/**
+ * PRO SOLUTION
+ * 
+ * numberChangeHandler = (num) => {
+  return +num.toString().split('').map(i => i*i).join('');
+}
+ */
+
+ //-----------------------------------------------------------------------------------------------------------------------
+
+
 /**
  * our task is to create a function that does four basic mathematical operations.
 
@@ -47,15 +59,9 @@ basicOp('/', 49, 7)        // Output: 7
 
 
 
-/**
- * PRO SOLUTION
- * 
- * numberChangeHandler = (num) => {
-  return +num.toString().split('').map(i => i*i).join('');
-}
- */
 
 
+//-----------------------------------------------------------------------------------------------------------------------
 /* Variables and Data types lesson */
 /*
 var firstName =  'John';
