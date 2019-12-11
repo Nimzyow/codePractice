@@ -6,6 +6,26 @@ For example, if we run 9119 through the function, 811181 will come out, because 
 Note: The function accepts an integer and returns an integer
  */
 
+//FIZZBUZZ test
+
+let fizzBuzzTest = () => {
+  let arr = [];
+  for (let i = 1; arr.length < 101; i++) {
+    if (i % 15 == 0) {
+      arr.push("FizzBuzz at " + i);
+    } else if (i % 3 == 0) {
+      arr.push("Fizz at " + i);
+    } else if (i % 5 == 0) {
+      arr.push("Buzz at " + i);
+    } else {
+      arr.push(i);
+    }
+  }
+  return arr;
+};
+
+console.log(fizzBuzzTest());
+
 /*
 numberChangeHandler = (num) => {
     let number = num;
@@ -39,8 +59,7 @@ console.log(numberChangeHandler(9119));
 }
  */
 
- //-----------------------------------------------------------------------------------------------------------------------
-
+//-----------------------------------------------------------------------------------------------------------------------
 
 /**
  * our task is to create a function that does four basic mathematical operations.
@@ -56,10 +75,6 @@ basicOp('*', 5, 5)         // Output: 25
 basicOp('/', 49, 7)        // Output: 7
 
  */
-
-
-
-
 
 //-----------------------------------------------------------------------------------------------------------------------
 /* Variables and Data types lesson */
@@ -143,9 +158,9 @@ var x;
 console.log(typeof x);
 */
 /***************
- * 
+ *
  *  Operator Precedence
- * 
+ *
  **************/
 /*
 var now = 2019;
@@ -259,8 +274,8 @@ console.log("Is Mark's BMI greater than Johns? " + johnVsMark);
 */
 
 /*
-******************BOOLEAN LOGIC******
-*/
+ ******************BOOLEAN LOGIC******
+ */
 /*
 var firstName = "john";
 var age = 20;
@@ -362,8 +377,8 @@ if (maryAverage > mikeAverage && maryAverage > johnAverage){
  * FUNCTIONS
  */
 
- // passing an argument into a function called calculateAge and returning a value. Now we need that value to be store somewhere so we define that below with ageJohn ageMike and ageJane.
- /*
+// passing an argument into a function called calculateAge and returning a value. Now we need that value to be store somewhere so we define that below with ageJohn ageMike and ageJane.
+/*
  function calculateAge(birthYear){
      return 2018 - birthYear;
  }
@@ -398,13 +413,13 @@ if (maryAverage > mikeAverage && maryAverage > johnAverage){
   * 
   */
 
-  //function declaration
-  /*
+//function declaration
+/*
   function whatDoYouDo(job, firstName){
 
   }
 */
-  //Function expression
+//Function expression
 /*
   var whatDoYouDo = function(job, firstName){
     switch(job){
@@ -424,11 +439,11 @@ if (maryAverage > mikeAverage && maryAverage > johnAverage){
   console.log(whatDoYouDo("Driver", "Kane"));
   */
 
-  /**
-   * 
-   * ***********ARRAYS**********
-   * 
-   */
+/**
+ *
+ * ***********ARRAYS**********
+ *
+ */
 /*
    //one way of calling an array (and the most popular way) is
    var names = ["John", "Mark", "Jane"];
@@ -511,9 +526,9 @@ console.log("the bills for the 3 restaurants with tips are \n "+ "£" + fullAmou
 */
 
 /**
- * 
+ *
  * OBJECTS AND PROPERTIES
- * 
+ *
  */
 /*
  //initialise object with variables inside (Object literal)
@@ -546,9 +561,9 @@ console.log(jane);
 */
 
 /**
- * 
+ *
  * OBJECTS AND METHODS
- * 
+ *
  */
 /*
 var john = {
@@ -614,15 +629,15 @@ if (john.bmi > mark.bmi){
 */
 
 /**
- * 
+ *
  * LOOPS AND ITERATIONS
- * 
+ *
  */
 
 //loops are important aspect of any programming language
 
 //initialise "for loop"
-//we start by declaring a variable, i. we say for it to perform below operation until i < 10. it will perform the first iteration and then adds 1 to i. 
+//we start by declaring a variable, i. we say for it to perform below operation until i < 10. it will perform the first iteration and then adds 1 to i.
 // order of operation for for loop
 //   1st step; 2nd step; 4th step
 /*
@@ -827,5 +842,3 @@ console.log(a + d);
 }
 
 */
-
-
