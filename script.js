@@ -1,4 +1,62 @@
 /**
+You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
+
+Implement a function likes :: [String] -> String, which must take in input array, containing the names of people who like an item. It must return the display text as shown in the examples:
+
+likes [] // must be "no one likes this"
+likes ["Peter"] // must be "Peter likes this"
+likes ["Jacob", "Alex"] // must be "Jacob and Alex like this"
+likes ["Max", "John", "Mark"] // must be "Max, John and Mark like this"
+likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 others like this"
+ */
+/*
+ let names = ["john", "alfred"]
+
+ function likes(names){
+     let sentence = ""
+     if (names.length === 0){
+         sentence = "no one likes this";
+         return sentence;
+     } else if (names.length === 1){
+        sentence = names[0] + " likes this";
+        return sentence;
+     } else if (names.length === 2){
+        sentence = names[0] + " and " + names[1] + " like this";
+        return sentence;
+     } else if (names.length === 3){
+         sentence = names[0] + ", " + names[1] + " and " + names[2] + " like this";
+         return sentence;
+     } else if (names.length > 3) {
+         sentence = names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
+         return sentence;
+     }
+    }
+
+    let people = ["John"]
+
+    console.log(likes(people));
+*/
+
+//PRO ANSWER
+/**
+ * 
+ * function likes(names) {
+  names = names || [];
+  switch(names.length){
+    case 0: return 'no one likes this'; break;
+    case 1: return names[0] + ' likes this'; break;
+    case 2: return names[0] + ' and ' + names[1] + ' like this'; break;
+    case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
+    default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
+  }
+}
+ */
+
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+/**
  * Welcome. In this kata, you are asked to square every digit of a number.
 
 For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
